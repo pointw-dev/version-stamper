@@ -1,6 +1,6 @@
 {
   "name": "version-stamper",
-  "version": "0.6.10",
+  "version": "1.0.3",
   "description": "Manage/sync version numbers across all files that contain it, including git tags.",
   "main": "lib/versionStamper.js",
   "bin": {

@@ -6,6 +6,7 @@ Some projects have version numbers in multiple files, e.g. `package.json` or `se
 
 With version stamper, you set the version number in one place (`version_stamp.json`), configure which files need the version number.  
 
+## Example
 For example, our [halchemy](https://github.com/pointw-dev/halchemy) library contains packages for Python, Node, and Ruby (more coming in the roadmap!).  To keep all of these packages in sync, halchemy's `version_stamp.json` looks like this:
 
 ```json
@@ -40,7 +41,14 @@ stamp --set 1.0.4
 
 This updates `version_stamp.json` (the single source of truth for the version) then applies the version number to all files configured.
 
-After you commit your code with the updated version number, you can easily tag the commit with:
+Stamp by itself with display the current version
+
+```bash
+stamp
+```
+
+## Tag your git commit
+After you commit your code, you can easily tag the commit with:
 
 ```bash
 stamp --tag
